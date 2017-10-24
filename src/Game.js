@@ -1,14 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './Game.css';
 
 import Pingball from './components/Pongball/Pongball';
 
-class Game extends Component {
-  constructor(props) {
-    super(props);
-
-  }
-
+class Game extends React.Component {
   getPingball() {
     console.log(this.props)
     const x = Math.round(Math.random() * this.props.w);
