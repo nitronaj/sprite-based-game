@@ -10,7 +10,7 @@ class Game extends React.Component {
     const y = Math.round(Math.random() * this.props.h);
     const vx = Math.round(Math.random() * 50);
     const vy = Math.round(Math.random() * 50);
-    return (<Pingball w={this.props.w} h={this.props.h} x={x} y={y} vx={vx} vy={vy}/>);
+    return (<Pingball w={this.props.w} h={this.props.h} x={x} y={y} vx={vx} vy={vy} />);
   }
 
   render() {
@@ -20,7 +20,7 @@ class Game extends React.Component {
     }
 
     const pingballList = this.getPingball();
-    return(
+    return (
       <div className="game-container" style={style}>
         {pingballList}
       </div>
